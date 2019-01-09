@@ -7,21 +7,21 @@ class Queue {
   	this.last = 0;
   }
 
-  enqueue(value)  {
+  enqueue(value) {
   	this.storage[this.indexs++] = value;
-  };
+  }
 
   dequeue() {
-  	var result =  this.storage[this.last];
+  	var result = this.storage[this.last];
     delete this.storage[this.last];
     this.last++;
     return result;
-  };
+  }
 
   size() {
- 	if (this.indexs - this.last < 0){return 0;}
+ 	if (this.indexs - this.last < 0) { return 0; }
     return this.indexs - this.last;
-  };
+  }
 
 }
 

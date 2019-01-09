@@ -14,7 +14,7 @@ var Queue = function() {
 
   someInstance.dequeue = function() {
     
-    var result =  storage[last];
+    var result = storage[last];
     delete storage[last];
     last++;
     return result;
@@ -22,7 +22,7 @@ var Queue = function() {
   };
 
   someInstance.size = function() {
-    if (index - last <0){return 0;}
+    if (index - last < 0) { return 0; }
     return index - last;
   };
 
